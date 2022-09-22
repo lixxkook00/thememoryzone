@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/QR Code.png">
+    <title>The Memory Zone - K29 Mãi đỉnh</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- boostrap -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- meta -->
+    <meta name="title" content="The Memory Zone" />
+    <meta name="author" content="The Memory Zone" />
+    <meta name="description" content="The Memory Zone">
+    <meta name="keywords" content="The Memory Zone">
+    <meta name="author" content="The Memory Zone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Memory Zone" />
+    <meta property="og:image" content="./assets/images/The Memory Zone.png">
+    <meta property="og:description" content="The Memory Zone" />
+
+    <!-- <meta property="og:image" content="./assets/images/ic-website.png" /> -->
+</head>
+
+<body>
+
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-right">
+            <img src="./assets/images/Unilucky logo.png" alt="">
+        </div>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <!-- <li class="soft-menu__item dark-modes">
+                <a href="#intro" data-address="intro" class="header-mobile-logo">
+
+                </a>
+            </li> -->
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about" data-address="about">
+                    <i class="fa-solid fa-user-group"></i>Về chúng tôi
+                </a>
+            </li>
+            <li onclick="toggleNavMobile()" class="soft-menu__item hehe">
+                <a class="" href="#product" data-address="machine">
+                    <i class="fa-solid fa-cart-shopping"></i>Sản phẩm nổi bật
+                </a>
+            </li>
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial" data-address="service">
+                    <i class="fa-solid fa-book"></i>Hướng dẫn tham gia
+                </a>
+            </li>
+
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="./assets/pdf/Unilucky.pdf" data-address="service">
+                    <i class="fa-sharp fa-solid fa-file"></i>Chính Sách Phúc Lợi
+                </a>
+            </li>
+
+            <div onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="https://unilucky.vn/r/utovn">
+                    <i class="fa-sharp fa-solid fa-user-plus"></i> Đăng kí ngay
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- TOP -->
+    <section class="top">
+        Họp mặt 15 năm tốt nghiệp K29 Đại Học Kinh Tế
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <img src="./assets/images/QR Code.png" alt="">
+                </div>
+
+                <div class="col-lg-8 col-md-6 col-12">
+                    <img src="./assets/images/The Memory Zone.png" alt="">
+                </div>
+
+                <div class="col-12">
+                    <div class="intro-title text-right">
+                        Họp mặt 15 năm tốt nghiệp K29 Đại Học Kinh Tế
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INVITE -->
+    <section class="invite">
+        <div class="centering">
+            <div class="invite-title">
+                <img src="./assets/images/thumoi.png" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="invite-content">
+                        Hơn 15 năm xa cách nhưng mỗi chúng ta đều mang trong mình những ký ức và hoài niệm về những năm
+                        tháng học trò nhiều niềm
+                        vui và niềm hạnh phúc.
+                        <br><br>
+                        15 năm 1 chặng đường- 15 năm ngày trở về chúng ta có mặt ở đây để quây quần bên nhau và cùng ôn
+                        lại
+                        kỷ niệm cũng như kể
+                        cho nhau nghe những gì mình đã làm được.
+                        <br><br>
+                        Chúc các bạn luôn thành công, vững bước trên chính đôi chân của mình. Chúc cho buổi họp mặt lớp
+                        của
+                        chúng ta có thật
+                        nhiều niềm vui và lưu giữ nhiều kỷ niệm trên hành trình chúng ta đồng hành cùng nhau.
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="invite-img centering">
+                        <img src="./assets/images/image 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="invite-footer">
+            <img src="./assets/images/Group 2.png" alt="">
+        </div>
+    </section>
+
+    <!-- TIME -->
+    <section class="time">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="time-title">
+                        <img src="./assets/images/time.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div class="centering h-100 w-100">
+                        <div class="">
+                            <div class="time-value">
+                                9:00 am
+                            </div>
+                            <div class="time-date">
+                                30/09/2022 - 01/10/2022
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-item">
+                <div class="schedule-item-side schedule-item-left">
+                    Mình gặp nhau nè
+                </div>
+
+                <div class="schedule-item-icon">
+                    <img src="./assets/images/Ellipse 5.png" alt="">
+                </div>
+
+                <div class="schedule-item-side schedule-item-right">
+                    <img class="schedule-item-time" src="./assets/images/9_00.png" alt="">
+                </div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-item-side schedule-item-left">
+                    <img class="schedule-item-time" src="./assets/images/18_00.png" alt="">
+                </div>
+
+                <div class="schedule-item-icon">
+                    <img class="schedule-item-icon-m" src="./assets/images/Ellipse 5.png" alt="">
+                </div>
+
+                <div class="schedule-item-side schedule-item-right">
+                    Mình trò chuyện nè
+                    <br>
+                    ..bla bla
+                </div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-item-side schedule-item-left">
+                    Đói bụng quá ăn nè..
+                    <br>
+                    quét <strong>QR</strong> để được ăn nè ^-^
+                </div>
+
+                <div class="schedule-item-icon">
+                    <img class="schedule-item-icon-l" src="./assets/images/Ellipse 5.png" alt="">
+                </div>
+
+                <div class="schedule-item-side schedule-item-right">
+                    <img class="schedule-item-time" src="./assets/images/18_00.png" alt="">
+                </div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-item-side schedule-item-left">
+                    <img class="schedule-item-time" src="./assets/images/18_00.png" alt="">
+                </div>
+
+                <div class="schedule-item-icon">
+                    <img class="schedule-item-icon-xl" src="./assets/images/Ellipse 5.png" alt="">
+                </div>
+
+                <div class="schedule-item-side schedule-item-right">
+                    quét <strong>QR</strong> cái rồi dề nè :))
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <div class="location">
+        <div class="location-title centering">
+            <img src="./assets/images/location.png" alt="">
+        </div>
+
+        <div class="location-title text-center">
+            The Stay Saigon Riverfront
+        </div>
+        <div class="location-desc text-center">
+            75/A10 Long Thuận, Trường Thạnh, Quận 9, Thành phố Hồ Chí Minh
+        </div>
+
+        <div class="location-content container">
+            <div class="row">
+                <div class="col-4">
+                    <img style="margin-bottom: 10px;"
+                        src="./assets/images/277663117_104258875582023_3364894523375806048_n.png" alt="">
+                    <img src="./assets/images/288387341_133934045947839_7987873405171104693_n.png" alt="">
+                </div>
+                <div class="col-8">
+                    <div class="row h-100">
+                        <div class="col-6">
+                            <img class="h-100" src="./assets/images/111.png" alt=""
+                                style="transform: scaleX(1.015) translateX(3px);">
+                        </div>
+                        <div class="col-6">
+                            <img class="h-100" src="./assets/images/287269704_132090192798891_7535063992493509663_n.png"
+                                alt="">
+                        </div>
+                        <div class="col-12" style="margin-top: 10px;">
+                            <img class="h-100" src="./assets/images/277663333_104259268915317_5103832471592012944_n.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-iframe">
+                <div class="iframe-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9516.719609234882!2d106.83447310523198!3d10.815720910844755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752122d88ca18d%3A0xa680743f292e3996!2zNzUgTG9uZyBUaHXhuq1uLCBUcsaw4budbmcgVGjhuqFuaCwgUXXhuq1uIDksIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCA3MDAwMDA!5e0!3m2!1sen!2s!4v1663778700311!5m2!1sen!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONFIRM -->
+    <section class="confirm">
+        <div class="confirm-title centering w-100">
+            <img src="./assets/images/confirm-title.png" alt="">
+        </div>
+
+        <div class="container confirm-content">
+            <div class="row justify-content-between">
+                <div class="col-lg-7">
+                    <img src="./assets/images/2022-09-16 10.28 1.png" alt="">
+
+                    <img class="mt-4" src="./assets/images/Component 3.png" alt="">
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="confirm-form h-100">
+                        <div class="confirm-form-title text-center">
+                            Giấy xác nhận tham gia
+                        </div>
+                        <form>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Họ và tên</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Số điện thoại</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="">
+                            </div>
+
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">Xác nhận</button>
+                            </div>
+                        </form>
+
+                        <div class="confirm-form-img">
+                            <img src="./assets/images/4.png" alt="">
+
+                            <img src="./assets/images/noti.png" alt="" class="noti">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="centering">
+            <div class="footer-title">
+                <img src="./assets/images/footer-title.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADING -->
+    <!-- <div id="loading" class="loading centering">
+        <img src="./assets/images/Unilucky logo.png" alt="">
+        <div class="loadingio-spinner-ellipsis-hb80rj1v5n9">
+            <div class="ldio-g8exh9uea75">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+
+<script src="./assets/js/popper.min.js"></script>
+
+<!-- <script src="./assets/js/main.js"></script> -->
+
+<!-- Swiper JS -->
