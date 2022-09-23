@@ -107,10 +107,9 @@
   padding: 100px 0;
   background:  url(../images/telegram-cloud-photo-size-5-6134046759022866938-x.png) no-repeat center center;
   background-size: 100% auto;
-  background-image:
-    linear-gradient(#291816, #291816),
+  background-image: linear-gradient(#15141478, #151414d6),
     url(../images/telegram-cloud-photo-size-5-6134046759022866938-x.png);
-  background-blend-mode: exclusion;
+  background-blend-mode: hard-light;
 }
 
 .intro-title{
@@ -303,6 +302,7 @@
 
 .form-group label{
   min-width: 100px;
+  font-size: 12px;
 }
 
 .confirm-form{
@@ -313,6 +313,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.form-group{
+  justify-content: space-between;
+}
+
+.form-group input{
+  flex: 1;
+  max-width: 300px;
 }
 
 .confirm-form-img{
@@ -334,6 +343,9 @@
   position: absolute;
   top: -26%;
   left: 9%;
+  transition: all 0.5s ease-in-out;
+  
+  animation: noti-fly 2s linear infinite alternate;
 }
 
 .confirm-form-img img{
@@ -821,4 +833,13 @@
     100% {
         background: #3c7f72
     }
+}
+
+@keyframes noti-fly {
+  0% {
+      transform: translateY(5px);
+  }
+  100% {
+      transform: translateY(15px);
+  }
 }

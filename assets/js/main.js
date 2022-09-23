@@ -15,7 +15,7 @@ window.addEventListener('load', (event) => {
   $('.letter-image').classList.add("active")
 });
 
-$('.letter-content').onclick = () => {
+$('.letter-image').onclick = () => {
     $('#loading').classList.add("remove")
 }
 
