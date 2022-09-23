@@ -173,64 +173,46 @@
   padding: 30px 0 0;
   background: url(../images/7.png) no-repeat top left;
   background-size: contain;
-}
 
-.schedule-item{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
-  padding: 40px 0;
-  min-height: 150px;
+  position: relative;
 }
 
-.schedule-item-side{
-  width: 40%;
-  font-size: 16px;
-  font-family: monospace;
+.schedule-right{
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 230px;
+
+  transform: translateY(-50%)
 }
 
-.schedule-item-left{
-  text-align: right;
+.schedule img:first-child{
+  width: 180px;
 }
 
-.schedule-item-right{
-  text-align: left;
-}
-
-
-.schedule-item-icon{
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.schedule-item-icon img{
-  width: 30px;
-}
-
-.schedule-item-time{
-  height: 40px;
-  width: auto;
-}
-
-.schedule-item-icon-m{
-  transform: scale(1.2);
-}
-
-.schedule-item-icon-l{
-  transform: scale(1.4);
-}
-
-.schedule-item-icon-xl{
-  transform: scale(1.6);
+.schedule img:last-child{
+  width: 240px;
 }
 
 .location-title img{
   height: 140px;
   width: auto;
 }
+
+.schedule-content{
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
 /* LOCATION */
 .location{
   position: relative;
