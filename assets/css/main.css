@@ -438,7 +438,7 @@
 	 width: 0;
 	 height: 0;
 	 border-style: solid;
-	 border-width: 0 0 100px 200px;
+	 border-width: 0px 0px 100px 200px;
 	 border-color: transparent transparent #007a8d transparent;
 	 z-index: 2;
 }
@@ -482,7 +482,7 @@
 	 position: absolute;
 	 width: 160px;
 	 height: 60px;
-	 background: white;
+	 background: #000;
 	 z-index: 1;
 	 overflow: hidden;
 	 -webkit-transition: 0.4s 0.2s;
@@ -548,6 +548,7 @@
 }
  .letter-image:hover .animated-mail .letter {
 	 height: 180px;
+	 background-color: #fff;
 }
  .letter-image:hover .shadow {
 	 width: 250px;
